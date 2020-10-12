@@ -137,7 +137,9 @@ export class ProjectsListAdminComponent implements OnInit {
 
       this.listProjects = this.listProjects.filter((item: ProjectModel) => {
 
-        return item._porte_project.nom === this.listPorteProject[index].nom;
+        return item.getPorteProject().getNom() === this.listPorteProject[index].nom;
+
+
 
       });
     }

@@ -186,6 +186,10 @@ export class commentProjectModelBis {
 export class PorteProjectModel {
     id: number;
     nom: string;
+    getNom():string{
+
+       return nom;
+    }
   }
 
 export class ImageProjectModel {
@@ -298,6 +302,10 @@ export class ProjectModel {
         }
         setId(newId:number):void{
           id = newId;
+        }
+
+        getPorteProject(): PorteProjectModel{
+          return  _porte_project
         }
   }
 
