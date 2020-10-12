@@ -293,6 +293,12 @@ export class ProjectModel {
         total_like: number;
         total_dislike: number;
         total_vues: number;
+        getId():number {
+           return id;
+        }
+        setId(newId:number):void{
+          id = newId;
+        }
   }
 
 
